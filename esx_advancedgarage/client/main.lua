@@ -1226,8 +1226,8 @@ function refreshBlips()
 			table.insert(blipList, {
 				coords = { v.GaragePoint.x, v.GaragePoint.y },
 				text   = _U('blip_garage'),
-				sprite = Config.BlipGarage.Sprite,
-				color  = Config.BlipGarage.Color,
+				sprite = 455,
+				color  = 57,
 				scale  = Config.BlipGarage.Scale
 			})
 		end
@@ -1236,8 +1236,8 @@ function refreshBlips()
 			table.insert(blipList, {
 				coords = { v.PoundPoint.x, v.PoundPoint.y },
 				text   = _U('blip_pound'),
-				sprite = Config.BlipPound.Sprite,
-				color  = Config.BlipPound.Color,
+				sprite = 455,
+				color  = 46,
 				scale  = Config.BlipPound.Scale
 			})
 		end
@@ -1248,8 +1248,8 @@ function refreshBlips()
 			table.insert(blipList, {
 				coords = { v.GaragePoint.x, v.GaragePoint.y },
 				text   = _U('blip_garage'),
-				sprite = Config.BlipGarage.Sprite,
-				color  = Config.BlipGarage.Color,
+				sprite = 63,
+				color  = 38,
 				scale  = Config.BlipGarage.Scale
 			})
 		end
@@ -1258,8 +1258,8 @@ function refreshBlips()
 			table.insert(blipList, {
 				coords = { v.PoundPoint.x, v.PoundPoint.y },
 				text   = _U('blip_pound'),
-				sprite = Config.BlipPound.Sprite,
-				color  = Config.BlipPound.Color,
+				sprite = 90,
+				color  = 49,
 				scale  = Config.BlipPound.Scale
 			})
 		end

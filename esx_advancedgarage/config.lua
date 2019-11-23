@@ -70,9 +70,9 @@ Config.BlipPound = {
 
 Config.BlipJobPound = {
 	Sprite = 67,
-	Color = 49,
+	Color = 26,
 	Display = 2,
-	Scale = 1.0
+	Scale = 0.4
 }
 
 Config.PointMarker = {
@@ -101,30 +101,30 @@ Config.PolicePounds = {
 	Pound_LosSantos = {
 		PoundPoint = { x = 374.42, y = -1620.68, z = 28.29 },
 		SpawnPoint = { x = 391.74, y = -1619.0, z = 28.29, h = 318.34 }
-	},
-	Pound_Sandy = {
-		PoundPoint = { x = 1646.01, y = 3812.06, z = 37.65 },
-		SpawnPoint = { x = 1627.84, y = 3788.45, z = 33.77, h = 308.53 }
-	},
-	Pound_Paleto = {
-		PoundPoint = { x = -223.6, y = 6243.37, z = 30.49 },
-		SpawnPoint = { x = -230.88, y = 6255.89, z = 30.49, h = 136.5 }
-	}
+	}--,
+--	  Pound_Sandy = {
+--		PoundPoint = { x = 1646.01, y = 3812.06, z = 37.65 },
+--		SpawnPoint = { x = 1627.84, y = 3788.45, z = 33.77, h = 308.53 }
+--	},
+--	Pound_Paleto = {
+--		PoundPoint = { x = -223.6, y = 6243.37, z = 30.49 },
+--		SpawnPoint = { x = -230.88, y = 6255.89, z = 30.49, h = 136.5 }
+--	}
 }
 
 Config.AmbulancePounds = {
 	Pound_LosSantos = {
 		PoundPoint = { x = 374.42, y = -1620.68, z = 28.29 },
 		SpawnPoint = { x = 391.74, y = -1619.0, z = 28.29, h = 318.34 }
-	},
-	Pound_Sandy = {
-		PoundPoint = { x = 1646.01, y = 3812.06, z = 37.65 },
-		SpawnPoint = { x = 1627.84, y = 3788.45, z = 33.77, h = 308.53 }
-	},
-	Pound_Paleto = {
-		PoundPoint = { x = -223.6, y = 6243.37, z = 30.49 },
-		SpawnPoint = { x = -230.88, y = 6255.89, z = 30.49, h = 136.5 }
-	}
+	}--,
+--	Pound_Sandy = {
+--		PoundPoint = { x = 1646.01, y = 3812.06, z = 37.65 },
+--		SpawnPoint = { x = 1627.84, y = 3788.45, z = 33.77, h = 308.53 }
+--	},
+--	Pound_Paleto = {
+--		PoundPoint = { x = -223.6, y = 6243.37, z = 30.49 },
+--		SpawnPoint = { x = -230.88, y = 6255.89, z = 30.49, h = 136.5 }
+--	}
 }
 
 -- End of Jobs
@@ -167,10 +167,10 @@ Config.CarPounds = {
 		PoundPoint = { x = 1651.38, y = 3804.84, z = 37.65 },
 		SpawnPoint = { x = 1627.84, y = 3788.45, z = 33.77, h = 308.53 }
 	},
-	Pound_Paleto = {
-		PoundPoint = { x = -234.82, y = 6198.65, z = 30.94 },
-		SpawnPoint = { x = -230.08, y = 6190.24, z = 30.49, h = 140.24 }
-	}
+	--Pound_Paleto = {
+	--	PoundPoint = { x = -234.82, y = 6198.65, z = 30.94 },
+	--	SpawnPoint = { x = -230.08, y = 6190.24, z = 30.49, h = 140.24 }
+	--}
 }
 
 -- End of Cars
@@ -241,446 +241,6 @@ Config.AircraftPounds = {
 -- Start of Private Garages
 
 Config.PrivateCarGarages = {
-	-- Maze Bank Building Garages
-	Garage_MazeBankBuilding = {
-		Private = "MazeBankBuilding",
-		GaragePoint = { x = -60.38, y = -790.31, z = 43.23 },
-		SpawnPoint = { x = -44.031, y = -787.363, z = 43.186, h = 254.322 },
-		DeletePoint = { x = -58.88, y = -778.625, z = 43.175 }
-	},
-	Garage_OldSpiceWarm = {
-		Private = "OldSpiceWarm",
-		GaragePoint = { x = -60.38, y = -790.31, z = 43.23 },
-		SpawnPoint = { x = -44.031, y = -787.363, z = 43.186, h = 254.322 },
-		DeletePoint = { x = -58.88, y = -778.625, z = 43.175 }
-	},
-	Garage_OldSpiceClassical = {
-		Private = "OldSpiceClassical",
-		GaragePoint = { x = -60.38, y = -790.31, z = 43.23 },
-		SpawnPoint = { x = -44.031, y = -787.363, z = 43.186, h = 254.322 },
-		DeletePoint = { x = -58.88, y = -778.625, z = 43.175 }
-	},
-	Garage_OldSpiceVintage = {
-		Private = "OldSpiceVintage",
-		GaragePoint = { x = -60.38, y = -790.31, z = 43.23 },
-		SpawnPoint = { x = -44.031, y = -787.363, z = 43.186, h = 254.322 },
-		DeletePoint = { x = -58.88, y = -778.625, z = 43.175 }
-	},
-	Garage_ExecutiveRich = {
-		Private = "ExecutiveRich",
-		GaragePoint = { x = -60.38, y = -790.31, z = 43.23 },
-		SpawnPoint = { x = -44.031, y = -787.363, z = 43.186, h = 254.322 },
-		DeletePoint = { x = -58.88, y = -778.625, z = 43.175 }
-	},
-	Garage_ExecutiveCool = {
-		Private = "ExecutiveCool",
-		GaragePoint = { x = -60.38, y = -790.31, z = 43.23 },
-		SpawnPoint = { x = -44.031, y = -787.363, z = 43.186, h = 254.322 },
-		DeletePoint = { x = -58.88, y = -778.625, z = 43.175 }
-	},
-	Garage_ExecutiveContrast = {
-		Private = "ExecutiveContrast",
-		GaragePoint = { x = -60.38, y = -790.31, z = 43.23 },
-		SpawnPoint = { x = -44.031, y = -787.363, z = 43.186, h = 254.322 },
-		DeletePoint = { x = -58.88, y = -778.625, z = 43.175 }
-	},
-	Garage_PowerBrokerIce = {
-		Private = "PowerBrokerIce",
-		GaragePoint = { x = -60.38, y = -790.31, z = 43.23 },
-		SpawnPoint = { x = -44.031, y = -787.363, z = 43.186, h = 254.322 },
-		DeletePoint = { x = -58.88, y = -778.625, z = 43.175 }
-	},
-	Garage_PowerBrokerConservative = {
-		Private = "PowerBrokerConservative",
-		GaragePoint = { x = -60.38, y = -790.31, z = 43.23 },
-		SpawnPoint = { x = -44.031, y = -787.363, z = 43.186, h = 254.322 },
-		DeletePoint = { x = -58.88, y = -778.625, z = 43.175 }
-	},
-	Garage_PowerBrokerPolished = {
-		Private = "PowerBrokerPolished",
-		GaragePoint = { x = -60.38, y = -790.31, z = 43.23 },
-		SpawnPoint = { x = -44.031, y = -787.363, z = 43.186, h = 254.322 },
-		DeletePoint = { x = -58.88, y = -778.625, z = 43.175 }
-	},
-	-- End of Maze Bank Building Garages
-	-- Start of Lom Bank Garages
-	Garage_LomBank = {
-		Private = "LomBank",
-		GaragePoint = { x = -1545.17, y = -566.24, z = 24.85 },
-		SpawnPoint = { x = -1551.88, y = -581.383, z = 24.708, h = 331.176 },
-		DeletePoint = { x = -1538.564, y = -576.049, z = 24.708 }
-	},
-	Garage_LBOldSpiceWarm = {
-		Private = "LBOldSpiceWarm",
-		GaragePoint = { x = -1545.17, y = -566.24, z = 24.85 },
-		SpawnPoint = { x = -1551.88, y = -581.383, z = 24.708, h = 331.176 },
-		DeletePoint = { x = -1538.564, y = -576.049, z = 24.708 }
-	},
-	Garage_LBOldSpiceClassical = {
-		Private = "LBOldSpiceClassical",
-		GaragePoint = { x = -1545.17, y = -566.24, z = 24.85 },
-		SpawnPoint = { x = -1551.88, y = -581.383, z = 24.708, h = 331.176 },
-		DeletePoint = { x = -1538.564, y = -576.049, z = 24.708 }
-	},
-	Garage_LBOldSpiceVintage = {
-		Private = "LBOldSpiceVintage",
-		GaragePoint = { x = -1545.17, y = -566.24, z = 24.85 },
-		SpawnPoint = { x = -1551.88, y = -581.383, z = 24.708, h = 331.176 },
-		DeletePoint = { x = -1538.564, y = -576.049, z = 24.708 }
-	},
-	Garage_LBExecutiveRich = {
-		Private = "LBExecutiveRich",
-		GaragePoint = { x = -1545.17, y = -566.24, z = 24.85 },
-		SpawnPoint = { x = -1551.88, y = -581.383, z = 24.708, h = 331.176 },
-		DeletePoint = { x = -1538.564, y = -576.049, z = 24.708 }
-	},
-	Garage_LBExecutiveCool = {
-		Private = "LBExecutiveCool",
-		GaragePoint = { x = -1545.17, y = -566.24, z = 24.85 },
-		SpawnPoint = { x = -1551.88, y = -581.383, z = 24.708, h = 331.176 },
-		DeletePoint = { x = -1538.564, y = -576.049, z = 24.708 }
-	},
-	Garage_LBExecutiveContrast = {
-		Private = "LBExecutiveContrast",
-		GaragePoint = { x = -1545.17, y = -566.24, z = 24.85 },
-		SpawnPoint = { x = -1551.88, y = -581.383, z = 24.708, h = 331.176 },
-		DeletePoint = { x = -1538.564, y = -576.049, z = 24.708 }
-	},
-	Garage_LBPowerBrokerIce = {
-		Private = "LBPowerBrokerIce",
-		GaragePoint = { x = -1545.17, y = -566.24, z = 24.85 },
-		SpawnPoint = { x = -1551.88, y = -581.383, z = 24.708, h = 331.176 },
-		DeletePoint = { x = -1538.564, y = -576.049, z = 24.708 }
-	},
-	Garage_LBPowerBrokerConservative = {
-		Private = "LBPowerBrokerConservative",
-		GaragePoint = { x = -1545.17, y = -566.24, z = 24.85 },
-		SpawnPoint = { x = -1551.88, y = -581.383, z = 24.708, h = 331.176 },
-		DeletePoint = { x = -1538.564, y = -576.049, z = 24.708 }
-	},
-	Garage_LBPowerBrokerPolished = {
-		Private = "LBPowerBrokerPolished",
-		GaragePoint = { x = -1545.17, y = -566.24, z = 24.85 },
-		SpawnPoint = { x = -1551.88, y = -581.383, z = 24.708, h = 331.176 },
-		DeletePoint = { x = -1538.564, y = -576.049, z = 24.708 }
-	},
-	-- End of Lom Bank Garages
-	-- Start of Maze Bank West Garages
-	Garage_MazeBankWest = {
-		Private = "MazeBankWest",
-		GaragePoint = { x = -1368.14, y = -468.01, z = 30.6 },
-		SpawnPoint = { x = -1376.93, y = -474.32, z = 30.5, h = 97.95 },
-		DeletePoint = { x = -1362.065, y = -471.982, z = 30.5 }
-	},
-	Garage_MBWOldSpiceWarm = {
-		Private = "MBWOldSpiceWarm",
-		GaragePoint = { x = -1368.14, y = -468.01, z = 30.6 },
-		SpawnPoint = { x = -1376.93, y = -474.32, z = 30.5, h = 97.95 },
-		DeletePoint = { x = -1362.065, y = -471.982, z = 30.5 }
-	},
-	Garage_MBWOldSpiceClassical = {
-		Private = "MBWOldSpiceClassical",
-		GaragePoint = { x = -1368.14, y = -468.01, z = 30.6 },
-		SpawnPoint = { x = -1376.93, y = -474.32, z = 30.5, h = 97.95 },
-		DeletePoint = { x = -1362.065, y = -471.982, z = 30.5 }
-	},
-	Garage_MBWOldSpiceVintage = {
-		Private = "MBWOldSpiceVintage",
-		GaragePoint = { x = -1368.14, y = -468.01, z = 30.6 },
-		SpawnPoint = { x = -1376.93, y = -474.32, z = 30.5, h = 97.95 },
-		DeletePoint = { x = -1362.065, y = -471.982, z = 30.5 }
-	},
-	Garage_MBWExecutiveRich = {
-		Private = "MBWExecutiveRich",
-		GaragePoint = { x = -1368.14, y = -468.01, z = 30.6 },
-		SpawnPoint = { x = -1376.93, y = -474.32, z = 30.5, h = 97.95 },
-		DeletePoint = { x = -1362.065, y = -471.982, z = 30.5 }
-	},
-	Garage_MBWExecutiveCool = {
-		Private = "MBWExecutiveCool",
-		GaragePoint = { x = -1368.14, y = -468.01, z = 30.6 },
-		SpawnPoint = { x = -1376.93, y = -474.32, z = 30.5, h = 97.95 },
-		DeletePoint = { x = -1362.065, y = -471.982, z = 30.5 }
-	},
-	Garage_MBWExecutiveContrast = {
-		Private = "MBWExecutiveContrast",
-		GaragePoint = { x = -1368.14, y = -468.01, z = 30.6 },
-		SpawnPoint = { x = -1376.93, y = -474.32, z = 30.5, h = 97.95 },
-		DeletePoint = { x = -1362.065, y = -471.982, z = 30.5 }
-	},
-	Garage_MBWPowerBrokerIce = {
-		Private = "MBWPowerBrokerIce",
-		GaragePoint = { x = -1368.14, y = -468.01, z = 30.6 },
-		SpawnPoint = { x = -1376.93, y = -474.32, z = 30.5, h = 97.95 },
-		DeletePoint = { x = -1362.065, y = -471.982, z = 30.5 }
-	},
-	Garage_MBWPowerBrokerConvservative = {
-		Private = "MBWPowerBrokerConvservative",
-		GaragePoint = { x = -1368.14, y = -468.01, z = 30.6 },
-		SpawnPoint = { x = -1376.93, y = -474.32, z = 30.5, h = 97.95 },
-		DeletePoint = { x = -1362.065, y = -471.982, z = 30.5 }
-	},
-	Garage_MBWPowerBrokerPolished = {
-		Private = "MBWPowerBrokerPolished",
-		GaragePoint = { x = -1368.14, y = -468.01, z = 30.6 },
-		SpawnPoint = { x = -1376.93, y = -474.32, z = 30.5, h = 97.95 },
-		DeletePoint = { x = -1362.065, y = -471.982, z = 30.5 }
-	},
-	-- End of Maze Bank West Garages
-	-- Start of Intergrity Way Garages
-	Garage_IntegrityWay = {
-		Private = "IntegrityWay",
-		GaragePoint = { x = -14.1, y = -614.93, z = 34.86 },
-		SpawnPoint = { x = -7.351, y = -635.1, z = 34.724, h = 66.632 },
-		DeletePoint = { x = -37.575, y = -620.391, z = 34.073 }
-	},
-	Garage_IntegrityWay28 = {
-		Private = "IntegrityWay28",
-		GaragePoint = { x = -14.1, y = -614.93, z = 34.86 },
-		SpawnPoint = { x = -7.351, y = -635.1, z = 34.724, h = 66.632 },
-		DeletePoint = { x = -37.575, y = -620.391, z = 34.073 }
-	},
-	Garage_IntegrityWay30 = {
-		Private = "IntegrityWay30",
-		GaragePoint = { x = -14.1, y = -614.93, z = 34.86 },
-		SpawnPoint = { x = -7.351, y = -635.1, z = 34.724, h = 66.632 },
-		DeletePoint = { x = -37.575, y = -620.391, z = 34.073 }
-	},
-	-- End of Intergrity Way Garages
-	-- Start of Dell Perro Heights Garages
-	Garage_DellPerroHeights = {
-		Private = "DellPerroHeights",
-		GaragePoint = { x = -1477.15, y = -517.17, z = 33.74 },
-		SpawnPoint = { x = -1483.16, y = -505.1, z = 31.81, h = 299.89 },
-		DeletePoint = { x = -1452.612, y = -508.782, z = 30.582 }
-	},
-	Garage_DellPerroHeightst4 = {
-		Private = "DellPerroHeightst4",
-		GaragePoint = { x = -1477.15, y = -517.17, z = 33.74 },
-		SpawnPoint = { x = -1483.16, y = -505.1, z = 31.81, h = 299.89 },
-		DeletePoint = { x = -1452.612, y = -508.782, z = 30.582 }
-	},
-	Garage_DellPerroHeightst7 = {
-		Private = "DellPerroHeightst7",
-		GaragePoint = { x = -1477.15, y = -517.17, z = 33.74 },
-		SpawnPoint = { x = -1483.16, y = -505.1, z = 31.81, h = 299.89 },
-		DeletePoint = { x = -1452.612, y = -508.782, z = 30.582 }
-	},
-	-- End of Dell Perro Heights Garages
-	-- Start of Milton Drive Garages
-	Garage_MiltonDrive = {
-		Private = "MiltonDrive",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Modern1Apartment = {
-		Private = "Modern1Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Modern2Apartment = {
-		Private = "Modern2Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Modern3Apartment = {
-		Private = "Modern3Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Mody1Apartment = {
-		Private = "Mody1Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Mody2Apartment = {
-		Private = "Mody2Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Mody3Apartment = {
-		Private = "Mody3Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Vibrant1Apartment = {
-		Private = "Vibrant1Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Vibrant2Apartment = {
-		Private = "Vibrant2Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Vibrant3Apartment = {
-		Private = "Vibrant3Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Sharp1Apartment = {
-		Private = "Sharp1Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Sharp2Apartment = {
-		Private = "Sharp2Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Sharp3Apartment = {
-		Private = "Sharp3Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Monochrome1Apartment = {
-		Private = "Monochrome1Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Monochrome2Apartment = {
-		Private = "Monochrome2Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Monochrome3Apartment = {
-		Private = "Monochrome3Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Seductive1Apartment = {
-		Private = "Seductive1Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Seductive2Apartment = {
-		Private = "Seductive2Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Seductive3Apartment = {
-		Private = "Seductive3Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Regal1Apartment = {
-		Private = "Regal1Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Regal2Apartment = {
-		Private = "Regal2Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Regal3Apartment = {
-		Private = "Regal3Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Aqua1Apartment = {
-		Private = "Aqua1Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Aqua2Apartment = {
-		Private = "Aqua2Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	Garage_Aqua3Apartment = {
-		Private = "Aqua3Apartment",
-		GaragePoint = { x = -795.96, y = 331.83, z = 84.5 },
-		SpawnPoint = { x = -800.496, y = 333.468, z = 84.5, h = 180.494 },
-		DeletePoint = { x = -791.755, y = 333.468, z = 84.5 }
-	},
-	-- End of Milton Drive Garages
-	-- Start of Single Garages
-	Garage_RichardMajesticApt2 = {
-		Private = "RichardMajesticApt2",
-		GaragePoint = { x = -887.5, y = -349.58, z = 33.534 },
-		SpawnPoint = { x = -886.03, y = -343.78, z = 33.534, h = 206.79 },
-		DeletePoint = { x = -894.324, y = -349.326, z = 33.534 }
-	},
-	Garage_WildOatsDrive = {
-		Private = "WildOatsDrive",
-		GaragePoint = { x = -178.65, y = 503.45, z = 135.85 },
-		SpawnPoint = { x = -189.98, y = 505.8, z = 133.48, h = 282.62 },
-		DeletePoint = { x = -189.28, y = 500.56, z = 132.93 }
-	},
-	Garage_WhispymoundDrive = {
-		Private = "WhispymoundDrive",
-		GaragePoint = { x = 123.65, y = 565.75, z = 183.04 },
-		SpawnPoint = { x = 130.11, y = 571.47, z = 182.42, h = 270.71 },
-		DeletePoint = { x = 131.97, y = 566.77, z = 181.95 }
-	},
-	Garage_NorthConkerAvenue2044 = {
-		Private = "NorthConkerAvenue2044",
-		GaragePoint = { x = 348.18, y = 443.01, z = 146.7 },
-		SpawnPoint = { x = 358.397, y = 437.064, z = 144.277, h = 285.911 },
-		DeletePoint = { x = 351.383, y = 438.865, z = 145.66 }
-	},
-	Garage_NorthConkerAvenue2045 = {
-		Private = "NorthConkerAvenue2045",
-		GaragePoint = { x = 370.69, y = 430.76, z = 144.11 },
-		SpawnPoint = { x = 392.88, y = 434.54, z = 142.17, h = 264.94 },
-		DeletePoint = { x = 389.72, y = 429.95, z = 141.81 }
-	},
-	Garage_HillcrestAvenue2862 = {
-		Private = "HillcrestAvenue2862",
-		GaragePoint = { x = -688.71, y = 597.57, z = 142.64 },
-		SpawnPoint = { x = -683.72, y = 609.88, z = 143.28, h = 338.06 },
-		DeletePoint = { x = -685.259, y = 601.083, z = 142.365 }
-	},
-	Garage_HillcrestAvenue2868 = {
-		Private = "HillcrestAvenue2868",
-		GaragePoint = { x = -752.753, y = 624.901, z = 141.2 },
-		SpawnPoint = { x = -749.32, y = 628.61, z = 141.48, h = 197.14 },
-		DeletePoint = { x = -754.286, y = 631.581, z = 141.2 }
-	},
-	Garage_HillcrestAvenue2874 = {
-		Private = "HillcrestAvenue2874",
-		GaragePoint = { x = -859.01, y = 695.95, z = 147.93 },
-		SpawnPoint = { x = -863.681, y = 698.72, z = 147.052, h = 341.77 },
-		DeletePoint = { x = -855.66, y = 698.77, z = 147.81 }
-	},
-	Garage_MadWayneThunder = {
-		Private = "MadWayneThunder",
-		GaragePoint = { x = -1290.95, y = 454.52, z = 96.66 },
-		SpawnPoint = { x = -1297.62, y = 459.28, z = 96.48, h = 285.652 },
-		DeletePoint = { x = -1298.088, y = 468.952, z = 96.0 }
-	},
-	Garage_TinselTowersApt12 = {
-		Private = "TinselTowersApt12",
-		GaragePoint = { x = -616.74, y = 56.38, z = 42.736 },
-		SpawnPoint = { x = -620.588, y = 60.102, z = 42.736, h = 109.316 },
-		DeletePoint = { x = -621.128, y = 52.691, z = 42.735 }
-	},
-	-- End of Single Garages
 	-- Start of VENT Custom Garages
 	Garage_MedEndApartment1 = {
 		Private = "MedEndApartment1",
