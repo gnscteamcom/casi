@@ -17,7 +17,7 @@ Citizen.CreateThread(function()
     while true do 
         Citizen.Wait(0)
 
-        if IsControlJustReleased(1, Keys['.']) then
+        if IsControlJustReleased(1, Keys[',']) then
             ragdoled = true
             if IsPedInAnyVehicle(GetPlayerPed(), false) then
                 ragdoled = false

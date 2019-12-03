@@ -14,6 +14,7 @@ Config.Weapons = {
     {weapon = "WEAPON_ASSAULTSMG", price = 400000},
     {weapon = "WEAPON_ASSAULTRIFLE", price = 500000},
     {weapon = "WEAPON_ASSAULTRIFLE_MK2", price = 750000},
+    --aparece nill
 
 }
 

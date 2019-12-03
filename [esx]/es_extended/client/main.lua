@@ -7,7 +7,7 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
 	ESX.PlayerLoaded = true
 	ESX.PlayerData = xPlayer
 
-	if Config.HeaderHud then
+	if Config.EnableHud then
 		for k,v in ipairs(xPlayer.accounts) do
 			local accountTpl = '<div><img src="img/accounts/' .. v.name .. '.png"/>&nbsp;{{money}}</div>'
 
@@ -40,6 +40,29 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
 	end
 end)
 
+RegisterNetEvent('esx:setMaxWeight')
+AddEventHandler('esx:setMaxWeight', function(newMaxWeight)
+	ESX.PlayerData.maxWeight = newMaxWeight
+end)
+
+RegisterNetEvent('esx:createMissingPickups')
+AddEventHandler('esx:createMissingPickups', function(missingPickups)
+	for pickupId,v in pairs(missingPickups) do
+		ESX.Game.SpawnLocalObject('prop_money_bag_01', v.coords, function(obj)
+			SetEntityAsMissionEntity(obj, true, false)
+			PlaceObjectOnGroundProperly(obj)
+
+			pickups[pickupId] = {
+				id = pickupId,
+				obj = obj,
+				label = v.label,
+				inRange = false,
+				coords = v.coords
+			}
+		end)
+	end
+end)
+
 AddEventHandler('playerSpawned', function()
 	while not ESX.PlayerLoaded do
 		Citizen.Wait(1)
@@ -54,9 +77,12 @@ AddEventHandler('playerSpawned', function()
 
 	TriggerEvent('esx:restoreLoadout') -- restore loadout
 
-	isLoadoutLoaded = true
-	isPlayerSpawned = true
-	isDead = false
+	isLoadoutLoaded, isPlayerSpawned, isDead = true, true, false
+
+	if Config.EnablePvP then
+		SetCanAttackFriendly(playerPed, true, false)
+		NetworkSetFriendlyFireOption(true)
+	end
 end)
 
 AddEventHandler('esx:onPlayerDeath', function()
@@ -112,7 +138,7 @@ AddEventHandler('esx:setAccountMoney', function(account)
 		end
 	end
 
-	if Config.EnableHeader then
+	if Config.EnableHud then
 		ESX.UI.HUD.UpdateElement('account_' .. account.name, {
 			money = ESX.Math.GroupDigits(account.money)
 		})
@@ -179,6 +205,14 @@ AddEventHandler('esx:addWeaponComponent', function(weaponName, weaponComponent)
 	GiveWeaponComponentToPed(playerPed, weaponHash, componentHash)
 end)
 
+RegisterNetEvent('esx:setWeaponAmmo')
+AddEventHandler('esx:setWeaponAmmo', function(weaponName, weaponAmmo)
+	local playerPed  = PlayerPedId()
+	local weaponHash = GetHashKey(weaponName)
+
+	SetPedAmmo(playerPed, weaponHash, weaponAmmo)
+end)
+
 RegisterNetEvent('esx:removeWeapon')
 AddEventHandler('esx:removeWeapon', function(weaponName, ammo)
 	local playerPed  = PlayerPedId()
@@ -224,7 +258,7 @@ end)
 
 RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob', function(job)
-	if Config.HeaderHud then
+	if Config.EnableHud then
 		ESX.UI.HUD.UpdateElement('job', {
 			job_label   = job.label,
 			grade_label = job.grade_label
@@ -235,7 +269,6 @@ end)
 RegisterNetEvent('esx:loadIPL')
 AddEventHandler('esx:loadIPL', function(name)
 	Citizen.CreateThread(function()
-		LoadMpDlcMaps()
 		RequestIpl(name)
 	end)
 end)
@@ -321,11 +354,7 @@ AddEventHandler('esx:pickup', function(id, label, player)
 			obj = obj,
 			label = label,
 			inRange = false,
-			coords = {
-				x = x,
-				y = y,
-				z = z
-			}
+			coords = {x = x, y = y, z = z}
 		}
 	end)
 end)
@@ -379,7 +408,7 @@ AddEventHandler('esx:deleteVehicle', function()
 end)
 
 -- Pause menu disable HUD display
-if Config.HeaderHud then
+if Config.EnableHud then
 	Citizen.CreateThread(function()
 		while true do
 			Citizen.Wait(300)
@@ -405,10 +434,6 @@ Citizen.CreateThread(function()
 		local playerPed      = PlayerPedId()
 		local loadout        = {}
 		local loadoutChanged = false
-
-		if IsPedDeadOrDying(playerPed) then
-			isLoadoutLoaded = false
-		end
 
 		for k,v in ipairs(Config.Weapons) do
 			local weaponName = v.name
@@ -458,7 +483,7 @@ Citizen.CreateThread(function()
 		Citizen.Wait(0)
 
 		if IsControlJustReleased(0, 289) and IsInputDisabled(0) and not isDead and not ESX.UI.Menu.IsOpen('default', 'es_extended', 'inventory') then
-			--ESX.ShowInventory()
+			ESX.ShowInventory()
 		end
 	end
 end)
