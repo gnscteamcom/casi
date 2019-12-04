@@ -76,7 +76,7 @@
 
 local radioActive 				= false
 local radioButton				= 20 --- U by default  -- use 57 for f10 -- ALT 20
-local handsUpButton				= 74 --- H by default -- use 73 for X
+local handsUpButton				= 73 --- H by default -- use 73 for X
 
 --- Function for radio chatter function
 Citizen.CreateThread( function()

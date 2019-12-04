@@ -29,7 +29,7 @@ menuConfigs = {
                     navAngle = 270,                 -- Oritentation of wheel
                     minRadiusPercent = 0.3,         -- Minimum radius of wheel in percentage
                     maxRadiusPercent = 0.6,         -- Maximum radius of wheel in percentage
-                    labels = {"CANCELAR", "NO", "ANIMAR", "APLAUDIR", "CRUZAR LOS BRAZOS", "APOYARSE"},
+                    labels = {"CANCELAR", "NO", "ANIMAR", "APLAUDIR", "BRAZOS", "APOYARSE"},
                     commands = {"e cancel", "e no", "e cheer", "e slowclap", "e foldarms", "e leanwall"}
                 },
                 {
